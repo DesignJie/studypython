@@ -1,3 +1,1 @@
 # studypython
-studypython
-python
