@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="True" name="HandheldFriendly"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+    <meta name="format-detection" content="telphone=no, email=no"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>python flask</title>
+    <meta content="" name="description"/>
+    <meta content="" name="keywords"/>
+    <link rel="shortcut icon" href="" />
+    <meta name="Copytype" content="python flask"/>
+    <link rel="stylesheet" href="{{url_for('static',filename='default/css/wap.min.css')}}"/>
+</head>
+<body>
+    <article>
+       <p>My name is : {{data.name}}</p>
+       <p>My age is : {{data.age}}</p>
+       <p>{{ data.info }}</p>
+       <dl>
+        {% for items in data.info %}
+            <dd>{{ items }}</dd>
+        {% endfor%}
+
+       </dl>
+       {{ g.url_path }}
+    </article>
+
+</body>
+
+</html>
